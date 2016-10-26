@@ -5,7 +5,7 @@ import WeatherByDay from "./weather-by-day";
 
 class App extends Component {
     state = {
-        location: "Cluj-Napoca, Romania",
+        location: "",
         weatherByDaysHash: {},
         list: []
     };
