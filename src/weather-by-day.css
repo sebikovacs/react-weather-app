@@ -1,0 +1,36 @@
+.weather-by-day {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba( 0, 0, 0, .1 );
+}
+
+.weather-by-day:last-child {
+    border-bottom: 0;
+}
+
+.weather-date {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 20px 18px;
+}
+
+.weather-date-day {
+  font-size: 55px;
+}
+
+.weather-date-month {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.weather-date-year {
+  font-size: 11px;
+}
+
+.weather-date-weekday {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 10px
+}

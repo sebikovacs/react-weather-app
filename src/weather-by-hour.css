@@ -1,0 +1,35 @@
+.weather-by-hours {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px 0;
+}
+
+.weather-by-hour {
+    width: 12.5%;
+    text-align: center;
+    padding: 5px;
+}
+
+.weather-temperature {
+    font-size: 20px;
+    color: #928888;
+}
+
+.weather-time {
+    font-size: 12px;
+    color: #a3b1b5;
+}
+
+.weather-description {
+    padding: 5px 0 0 0;
+    font-size: 12px;
+}
+
+.weather-description::first-letter {
+  text-transform: capitalize;
+}
+
+.weather-by-night {
+    background: #d4f0f5;
+    box-shadow: rgba(0,0,0, .2) 0 0 1px;
+}
