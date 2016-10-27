@@ -5,6 +5,10 @@ import "./weather-by-day.css";
 
 const WetherByDay = ( { date, weatherByHours } ) => {
     const weatherByHoursArr = [];
+    const weekDay = moment( date ).format( "dddd" );
+    const day = moment( date ).format( "DD" );
+    const month = moment( date ).format( "MMMM" );
+    const year = moment( date ).format( "YYYY" );
 
     weatherByHours.forEach( ( weatherByHour ) => {
         weatherByHoursArr.push(
@@ -21,16 +25,16 @@ const WetherByDay = ( { date, weatherByHours } ) => {
         <div className="weather-by-day">
             <div className="weather-date">
                 <span className="weather-date-weekday">
-                    { moment( date ).format( "dddd" ) }
+                    { weekDay }
                 </span>
                 <span className="weather-date-day">
-                    { moment( date ).format( "DD" ) }
+                    { day }
                 </span>
                 <span className="weather-date-month">
-                    { moment( date ).format( "MMMM" ) }
+                    { month }
                 </span>
                 <span className="weather-date-year">
-                    { moment( date ).format( "YYYY" ) }
+                    { year }
                 </span>
             </div>
 
