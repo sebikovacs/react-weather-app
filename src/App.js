@@ -6,11 +6,11 @@ import WeatherByDay from "./weather-by-day";
 class App extends Component {
     constructor( ) {
         super();
-        this.setState( {
+        this.state = {
             location: "",
             weatherByDaysHash: {},
             list: []
-        } );
+        };
     }
 
     fetchData = ( evt ) => {
