@@ -4,11 +4,15 @@ import xhr from "xhr";
 import WeatherByDay from "./weather-by-day";
 
 class App extends Component {
-    state = {
-        location: "",
-        weatherByDaysHash: {},
-        list: []
-    };
+    constructor( ) {
+        super();
+        this.setState( {
+            location: "",
+            weatherByDaysHash: {},
+            list: []
+        } );
+    }
+
     fetchData = ( evt ) => {
         evt.preventDefault();
         const appId = "4db9020d123d978d307273d62f3c7723";
@@ -46,7 +50,7 @@ class App extends Component {
         } );
     }
 
-    render() {
+    getWeatherByDays = ( ) => {
         const weatherByDays = [];
         const weatherByDaysHash = this.state.weatherByDaysHash;
 
@@ -57,6 +61,11 @@ class App extends Component {
                 );
             }
         }
+        return weatherByDays;
+    }
+
+    render() {
+        const weatherByDays = this.getWeatherByDays();
 
         return (
           <div className="weather-app">
