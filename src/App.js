@@ -9,7 +9,6 @@ class App extends Component {
         weatherByDaysHash: {},
         list: []
     };
-
     fetchData = ( evt ) => {
         evt.preventDefault();
         const appId = "4db9020d123d978d307273d62f3c7723";
